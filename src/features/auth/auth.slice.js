@@ -50,7 +50,7 @@ export const authSlice = createSlice({
       state.isLoading = false;
       state.isError = true;
       state.isSuccess = false;
-      state.error = action.payload.error;
+      state.error = action?.payload?.error;
     });
   },
 });
